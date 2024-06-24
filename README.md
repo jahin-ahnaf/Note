@@ -1,5 +1,7 @@
 # Note
 
+[Click me to head to the web app site](https://jahin-note.netlify.app/)
+
 Note is an open source web app. You can use note to write your daily thoughts.
 Create Note, Edit it or Delete it whenever you want.
 
