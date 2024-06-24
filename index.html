@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+</head>
+<body>
+<div class="notes-container">
+    <h1>Notes</h1>
+    <div class="notes">
+        <!-- Notes will be added here -->
+        <div class="empty">No notes found.</div>
+    </div>
+    <button class="newNote" onclick="newNote()"><i class="fi fi-br-plus"></i></button>
+</div>
+
+<div class="note-input" style="visibility: hidden;">
+    <button class="close" onclick="closeNote()"><i class="fi fi-br-cross"></i></button>
+    <form onsubmit="createNewNote(); return false;">
+        <label>
+            <input required class="title" type="text" placeholder="Title">
+        </label>
+        <label>
+            <textarea required class="body" placeholder="Description goes here..."></textarea>
+        </label>
+        <button type="submit">Create Note</button>
+    </form>
+</div>
+
+<div class="note-edit" style="visibility: hidden;">
+    <button onclick="closeEdit()">Close</button>
+    <form onsubmit="editNote(); return false;">
+        <label>
+            <input required class="titleEdit" type="text">
+        </label>
+        <label>
+            <textarea required class="bodyEdit"></textarea>
+        </label>
+        <button type="submit">Edit</button>
+    </form>
+</div>
+
+<div class="credit">
+    <p>Developed by Jahin Ahnaf</p>
+    <p>Uicons by <a href="https://www.flaticon.com/uicons">Flaticon</a></p>
+</div>
+<div class="report">
+    Report Bug <a href="https://www.facebook.com/jahin.ahnaf.16/" target="_blank">Here</a>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
